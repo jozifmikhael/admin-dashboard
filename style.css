@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./font/Roboto/Roboto-Light.ttf);
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    height: 100vh;
+}
+
+.header, .sidebar,
+.main-content{
+    border: 1px solid black;
+
+}
+
+.header{
+    padding: 20px;
+    height: 200px;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template: 1fr 2fr/ 1fr 5fr 0.2fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.search-bar{
+    max-width: 400px;
+    height: 25px;
+    background-color: #9ca3af;
+    border-radius: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.notification-icon{
+    grid-column: 3/4;
+}
+
+.sidebar{
+    max-width: 400px;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.main-content{
+    grid-row: 2 / 3;
+}
+
+
